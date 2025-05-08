@@ -15,17 +15,21 @@ header {
     background: #333333;
     padding: 2rem;
     grid-column: 1 / 4;
+    height: 100px;
 }
 
-h1 {
+h2 {
     text-align: left;
     padding: 0.5rem;
     color: #fff;
+    /* background-color: yellow; */
 }
 
 nav {
     margin: 0 auto 2rem;
-    max-width: 90vw;
+    max-width: 120vw;
+    /* width: 2000px; */
+
 }
 
 .navigation {
@@ -34,7 +38,8 @@ nav {
     flex-wrap: wrap;
     background-color: #141313;
     align-items: center;
-    /* margin: 5rem; */
+    margin-top: 50px;
+    /* grid-row: 1 / 4; */
 }
 
 .navigation li {
@@ -62,7 +67,7 @@ p {
 }
 
 main {
-    /* padding: 2rem; */
+    padding: 2rem;
     grid-column: 1 / 3;
     background-color: #CCCCCC;
 }
@@ -77,5 +82,6 @@ footer {
     background: #333333;
     padding: 2rem;
     text-align: center;
+    color: #fff;
     grid-column: 1 / 4;
 }

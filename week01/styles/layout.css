@@ -38,8 +38,8 @@ nav {
     flex-wrap: wrap;
     background-color: #141313;
     align-items: center;
-    margin-top: 50px;
-    /* grid-row: 1 / 4; */
+    margin-top: 30px;
+    height: 80px;
 }
 
 .navigation li {

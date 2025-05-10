@@ -1,31 +1,11 @@
+// Get the current year for the copyright
+const copyrightYearSpan = document.getElementById("current-year");
+const currentYear = new Date().getFullYear();
+copyrightYearSpan.textContent = currentYear;
 
-// select the DOM elements for output
-const full = document.querySelector("#full");
-// use the date object
-const today = new Date();
+// Get the last modified date of the document
+const lastModifiedSpan = document.getElementById("last-modified");
+const lastModifiedDate = document.lastModified;
+lastModifiedSpan.textContent = lastModifiedDate;
 
-full.innerHTML = `Today is <span id="lastModified">${new Intl.DateTimeFormat(
-	"en-US",
-	{
-		dateStyle: "full"
-	}
-).format(today)}</span>`;
-// // Output the formatted date
-console.log(`Today's date is: ${full.innerHTML}`);    
-
-
-
-// // Get the current date
-// const currentDate = new Date();
-
-// // Format the date as a readable string
-// const formattedDate = currentDate.toLocaleDateString("en-US", {
-//     weekday: "long",
-//     year: "numeric",
-//     month: "long",
-//     day: "numeric"
-// });
-
-// // Output the formatted date
-// console.log(`Today's date is: ${formattedDate}`);
 

@@ -1,22 +1,27 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-.container {
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #d1d1d1;
+    padding: 1rem;
+    background-color: #bedeff ;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr; /* Creates one column that takes up all available space */
+    gap: 1rem; /* Sets a gap of 1rem between rows */    
+}
+
+section {
+    padding: 1rem;
+    background-color: #fff;
+}
+
+footer {
     text-align: center;
-    padding: 20px;
-}
-
-/* Default styles */
-body {
-    background-color: lightblue;
-}
-
-/* Media query for screens wider than 600px */
-@media (min-width: 600px) {
-    body {
-        background-color: lightgreen;
-    }
+    font-size: 1rem;
 }

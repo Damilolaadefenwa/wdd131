@@ -5,7 +5,7 @@
 
 const input = document.querySelector('#favchapter');
 const button = document.querySelector('button');
-const list = Document.querySelector('#list'); //you need to fill in the blank here to reference the HTML element that is a unordered list element.
+const list = document.querySelector('#list'); //you need to fill in the blank here to reference the HTML element that is a unordered list element.
 
 //6.Create a li element that will hold each entry's chapter title and an associated delete button.
 
@@ -18,8 +18,8 @@ const deleteButton = document.createElement('button'); //this will be the delete
 //8.Populate the li element variable's textContent or innerHTML with the input value
 li.textContent = input.value; //this will be the text on the li element
 
-//9.Populate the button textContent with a ❌.
-deleteButton.textContent = '❌'; //this will be the text on the delete button
+// //9.Populate the button textContent with a ❌.
+// deleteButton.textContent = '❌'; //this will be the text on the delete button
 
 //10.Append the li element variable with the delete button
 li.append(deleteButton); //this will append the delete button to the li element

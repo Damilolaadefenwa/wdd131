@@ -199,4 +199,9 @@ footer p {
         grid-template-columns: 1fr; /* Creates one column that takes up all available space */
         gap: 1rem; /* Sets a gap of 1rem between rows */
     }
+
+    h1{
+        color: black;
+        background-color: #7d8dac;
+    }
 }

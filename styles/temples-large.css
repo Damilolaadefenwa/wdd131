@@ -1,24 +1,46 @@
 /* Responsive adjustments */
-@media screen and (max-width: 768px) {
-    .desktop-nav {
+/* Larger Views ******************************/
+@media screen and (min-width: 740px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    nav a {
+        flex: 1 1 100%;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+        /* Creates two columns of equal size */
+        /* grid-template-columns: repeat(2, 1fr); Creates two equal columns */
+    }
+
+    /* .desktop-nav {
             display: none;
-        }
-    
-        .hamburger-menu {
+        } */
+
+    /* .hamburger-menu {
             display: block;
-        }
-    
-        .mobile-nav.open {
+        } */
+
+    /* .mobile-nav.open {
             display: block;
-        }
-    
-        .gallery {
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            /* Adjust for smaller items */
-        }
-    
-        .gallery figure {
-            margin: 0.5em 0;
-            /* Add some margin between figures on smaller screens if needed */
-        }
+        } */
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        /* Adjust for smaller items */
+    }
+
+    .gallery figure {
+        margin: 0.5em 0;
+        /* Add some margin between figures on smaller screens if needed */
+    }
 }

@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 body {
@@ -14,21 +14,26 @@ header {
     background-color: #bbb;
     /* Example purple color for the background */
     display: grid;
-    /* display: flex; */
+    grid-gap: 1rem;
     padding: 20px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    justify-content: space-between;
     box-shadow: 0 0 30px #333;
-    /* align-items: center; */
 }
 
 header,
 main {
     margin: 0 auto;
 }
-.logo {
-    font-size: 2em;
-    font-weight: bold;
+
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    float: left;
+    color: #fff;
+    /* display: inline-block; */
 }
 
 nav {
@@ -37,70 +42,29 @@ nav {
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
-}
-
-nav ul li a {
-    display: block;
-    color: white;
-    padding: 0.5em 1em;
-    text-decoration: none;
-    margin: 0 0.5em;
-    border-radius: 5px;
-}
-
-nav ul li a:hover,
-nav ul li a.active {
-    /* Added active class style */
-    background-color: #7e57c2;
-}
-
-.hamburger-menu {
-    background: none;
-    color: white;
-    border: none;
-    font-size: 1.5em;
-    cursor: pointer;
-    display: none;
-    /* Hide on larger screens */
-}
-
-.mobile-nav {
-    display: none;
-    /* Hide by default */
-    position: absolute;
-    top: 100%;
-    /* Position below header */
-    left: 0;
-    width: 100%;
-    background-color: #5e35b1;
-    z-index: 10;
-    padding: 1em 0;
-    /* Adjusted padding */
-    text-align: center;
-}
-
-.mobile-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    /* Make mobile nav items align better */
     flex-direction: column;
 }
 
-.mobile-nav ul li a {
+nav a {
     display: block;
-    color: white;
-    padding: 0.8em 0;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
     text-decoration: none;
-    border-bottom: 1px solid #7e57c2;
+    font-size: large;
+    font-size: larger;
 }
 
-.mobile-nav ul li:last-child a {
-    border-bottom: none;
+
+nav a:hover {
+    text-decoration: underline double;
+    background-color: #7e57c2;
+    color: #fff;
+}
+
+.active {
+    color: yellow;
 }
 
 .gallery {

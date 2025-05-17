@@ -1,10 +1,14 @@
 /* Responsive adjustments */
 /* Larger Views ******************************/
-@media screen and (min-width: 650px) {
-    header {
+@media screen and (min-width: 700px) {
+    /* header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+    } */
+
+    nav{
+        width: 100%;
     }
 
     nav ul {

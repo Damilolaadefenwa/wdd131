@@ -10,15 +10,15 @@ body {
 }
 
 
-header {
-    background-color: #bbb;
-    /* Example purple color for the background */
-    display: grid;
+/* header {
+    /* background-color: #bbb; */
+/* Example purple color for the background */
+/* display: grid;
     grid-gap: 1rem;
-    padding: 20px;
-    /* border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 30px #333; */
-}
+    padding: 20px; */
+/* border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px #333; 
+} */
 
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -168,7 +168,7 @@ footer p {
 }
 
 /* Hide nav by default on small screens */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     #main-nav ul {
         display: none;
         flex-direction: column;
@@ -189,19 +189,21 @@ footer p {
         display: block;
     }
 
-    header {
+    /* header {
         height: auto;
         background-color: #cd2ced;
-    }
+    } */
 
-    .gallery{
+    .gallery {
         display: grid;
-        grid-template-columns: 1fr; /* Creates one column that takes up all available space */
-        gap: 1rem; /* Sets a gap of 1rem between rows */
+        grid-template-columns: 1fr;
+        /* Creates one column that takes up all available space */
+        gap: 1rem;
+        /* Sets a gap of 1rem between rows */
     }
 
-    h1{
+    h1 {
         color: black;
-        background-color: #7d8dac;
+        background-color: #a7bce3;
     }
 }

@@ -1,1 +1,24 @@
-@media screen and (min-width: 500px) {}
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .desktop-nav {
+            display: none;
+        }
+    
+        .hamburger-menu {
+            display: block;
+        }
+    
+        .mobile-nav.open {
+            display: block;
+        }
+    
+        .gallery {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            /* Adjust for smaller items */
+        }
+    
+        .gallery figure {
+            margin: 0.5em 0;
+            /* Add some margin between figures on smaller screens if needed */
+        }
+}

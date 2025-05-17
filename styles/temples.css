@@ -1,0 +1,19 @@
+/* Start with the Base styles for previous footer */
+footer {
+    background: #1D4D72;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    margin-top: 2rem;
+    grid-column: 1 / 4;
+
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 400;
+}

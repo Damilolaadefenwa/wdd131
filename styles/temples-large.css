@@ -1,6 +1,6 @@
 /* Responsive adjustments */
 /* Larger Views ******************************/
-@media screen and (min-width: 740px) {
+@media screen and (min-width: 650px) {
     header {
         display: flex;
         align-items: center;
@@ -16,31 +16,35 @@
         flex: 1 1 100%;
     }
 
-    main {
-        grid-template-columns: 1fr 1fr;
-        /* Creates two columns of equal size */
-        /* grid-template-columns: repeat(2, 1fr); Creates two equal columns */
+    h2 {
+        font-size: 2rem;
+        text-align: center;
     }
 
-    /* .desktop-nav {
-            display: none;
-        } */
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
 
-    /* .hamburger-menu {
-            display: block;
-        } */
-
-    /* .mobile-nav.open {
-            display: block;
-        } */
+    #main-nav ul {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        background: none;
+        width: auto;
+    }
 
     .gallery {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        /* Adjust for smaller items */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 1rem;
+        padding: 1rem;
     }
 
     .gallery figure {
         margin: 0.5em 0;
         /* Add some margin between figures on smaller screens if needed */
     }
+
 }

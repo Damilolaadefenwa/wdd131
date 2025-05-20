@@ -1,13 +1,20 @@
 /* Responsive adjustments */
 /* Larger Views ******************************/
 @media screen and (min-width: 700px) {
-    /* header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    } */
+    main, .gallery {
+        margin-top: 1rem;
+    }
 
-    nav{
+    h1 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 2rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        float: left;
+        color: #fff;   
+    }
+    
+    nav {
         width: 100%;
     }
 
@@ -18,11 +25,6 @@
 
     nav a {
         flex: 1 1 100%;
-    }
-
-    h2 {
-        font-size: 2rem;
-        text-align: center;
     }
 
     #menu {
@@ -41,14 +43,18 @@
     .gallery {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        /* grid-template-rows: repeat(3, 1fr); */
         gap: 1rem;
-        padding: 1rem;
+        /* padding: 1rem; */
     }
 
-    .gallery figure {
-        margin: 0.5em 0;
-        /* Add some margin between figures on smaller screens if needed */
+    .gallery h2 {
+        grid-column: 1 / -1;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        color:black;   
     }
 
 }

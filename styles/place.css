@@ -1,0 +1,288 @@
+:root {
+    --header-footer-bg: #05814A;
+    /* Red from wireframe, i used Green instead based on 9ja flag */
+    /* --header-footer-bg: #E1212B; */
+    /* Red from wireframe */
+    --accent-white: #ffffff;
+    /* Green border color, i used white instead based on 9ja flag */
+    /* --accent-green: #3D784F; */
+    /* Green border color */
+
+    --text-color: #333;
+    --white-text: #fff;
+    --section-bg: #efefef;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e4e4e4;
+    /* Light grey background for the page */
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    /* Ensure footer sticks to bottom if content is short */
+}
+
+.page-container {
+    width: 100%;
+    max-width: 800px;
+    /* Max width for wider view */
+    background-color: var(--section-bg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    /* Margin top/bottom for wider view */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* For rounded corners/borders */
+}
+
+/* Header and Footer */
+.main-header,
+.main-footer {
+    background-color: var(--header-footer-bg);
+    color: var(--white-text);
+    text-align: center;
+    padding: 15px 0;
+}
+
+.main-header h1 {
+    margin: 0;
+    padding: 0 10px;
+    font-size: 2em;
+    position: relative;
+}
+
+/* Green top/bottom borders on header/footer */
+.main-header::before,
+.main-footer::after {
+    content: '';
+    display: block;
+    height: 5px;
+    /* Border thickness */
+    background-color: var(--accent-white);
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.main-header::before {
+    top: 0;
+}
+
+.main-footer::after {
+    bottom: 0;
+}
+
+/* Hero Image Section */
+.hero-image-section {
+    padding: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    /* Space between image and data section */
+    position: relative;
+    border-bottom: 5px solid var(--accent-white);
+    /* Green border below image */
+}
+
+.hero-image-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    /* Remove extra space below image */
+    margin: 0 auto;
+}
+
+/* Data and Weather Sections */
+.data-section,
+.weather-section {
+    padding: 20px;
+    margin: 0 20px 20px;
+    /* Margin to create inner spacing */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.data-section h2,
+.weather-section h2 {
+    color: var(--header-footer-bg);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    border-bottom: 1px solid #c2c2c2;
+    padding-bottom: 10px;
+}
+
+.data-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Default to single column for mobile */
+    gap: 10px;
+}
+
+.data-item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #eee;
+}
+
+.data-item:last-child {
+    border-bottom: none;
+}
+
+.data-item .label {
+    font-weight: bold;
+    color: #555;
+}
+
+.weather-section {
+    text-align: center;
+}
+
+.weather-icon img {
+    width: 80px;
+    /* Size of weather icon */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.weather-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.weather-item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #eee;
+}
+
+.weather-item:last-child {
+    border-bottom: none;
+}
+
+.weather-item .label {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Footer specific styling */
+.main-footer p {
+    margin: 5px 0;
+    font-size: 0.85em;
+    padding: 0 10px;
+}
+
+/* Responsive Design for Mobile View (smaller screens) */
+@media (max-width: 768px) {
+    .page-container {
+        margin: 0;
+        border-radius: 0;
+        /* Remove rounded corners on smaller screens */
+    }
+
+    .main-header h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-image-section {
+        margin-bottom: 10px;
+    }
+
+    .data-section,
+    .weather-section {
+        margin: 0 10px 15px;
+        /* Smaller margins for mobile */
+        padding: 15px;
+    }
+
+    .data-grid {
+        grid-template-columns: 1fr;
+        /* Stays single column */
+    }
+}
+
+/* Responsive Design for Wider View (similar to wireframe for >768px) */
+@media (min-width: 769px) {
+    .page-container {
+        border-radius: 8px;
+        /* Rounded corners for the entire card */
+    }
+
+    /* Adjust main header and footer for green borders outside */
+    .main-header {
+        position: relative;
+        padding-top: 20px;
+        /* Make space for pseudo-element */
+    }
+
+    .main-footer {
+        position: relative;
+        padding-bottom: 20px;
+        /* Make space for pseudo-element */
+    }
+
+    /* Move the green borders to the main container for wider view */
+    .page-container::before,
+    .page-container::after {
+        content: '';
+        display: block;
+        height: 5px;
+        /* Border thickness */
+        background-color: var(--accent-green);
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        /* Ensure it's on top */
+    }
+
+    .page-container::before {
+        top: 0;
+    }
+
+    .page-container::after {
+        bottom: 0;
+    }
+
+    /* Adjust header h1 and footer p for the container border */
+    .main-header h1,
+    .main-footer p {
+        position: relative;
+        /* So z-index works on header/footer content */
+        z-index: 1;
+    }
+
+    /* Arrange data and weather sections side-by-side for wider view */
+    .data-section {
+        width: calc(60% - 30px);
+        /* Roughly 60% width minus margin */
+        margin-right: 15px;
+    }
+
+    .weather-section {
+        width: calc(40% - 30px);
+        /* Roughly 40% width minus margin */
+        margin-left: 15px;
+    }
+
+    /* Flex container for data and weather sections */
+    .content-sections {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin-top: 20px;
+    }
+
+    /* To properly place .data-section and .weather-section side-by-side,
+       we need to wrap them in a div within index.html */
+}

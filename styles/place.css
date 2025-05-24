@@ -275,6 +275,9 @@ body {
         margin-left: 15px;
     }
 
+    /* To properly place .data-section and .weather-section side-by-side,
+        we need to wrap them in a div within index.html */
+
     /* Flex container for data and weather sections */
     .content-sections {
         display: flex;
@@ -283,6 +286,4 @@ body {
         margin-top: 20px;
     }
 
-    /* To properly place .data-section and .weather-section side-by-side,
-       we need to wrap them in a div within index.html */
 }

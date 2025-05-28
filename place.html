@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Country or Place Page | Damilola Adefenwa</title>
     <meta name="description"
-        content="This page talks about where I've lived and the type of unique bird found in the place.">
+        content="This page talks about the place I wish to visit and the type of unique animal found here.">
     <meta name="author" content="Damilola Adefenwa">
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
@@ -21,77 +21,51 @@
 <body>
     <div class="page-container">
         <header class="main-header">
-            <h1>City of Ibadan</h1>
+            <h1>MADAGASCAR</h1>
         </header>
 
-        <!-- <main></main> -->
-
-        <section class="hero-image-section">
+        <div class="hero-div">
             <picture>
-                <source srcset="images/place/malimbe-medium.webp" media="(max-width: 600px)">
-                <img src="images/place/malimbe-small.webp" alt="Ibadn-Malimbe perched on a branch of a tree" width="500"
-                    height="600">
+                <source srcset="images/place/lemure-larger-screen.webp" media="(min-width: 1000px)">
+                <img src="images/place/lemure-small-mobile.webp" alt="A family of Lemure of Madagascar gather together"
+                    width="640" height="850">
             </picture>
-        </section>
 
-        <div class="content-sections">
-            <section class="data-section">
-                <h2>Data</h2>
-                <div class="data-grid">
-                    <div class="data-item">
-                        <span class="label">Area:</span> <span class="value">587,041 sq km</span>
-                    </div>
-                    <div class="data-item">
-                        <span class="label">Population:</span> <span class="value">27,691,018</span>
-                    </div>
-                    <div class="data-item">
-                        <span class="label">Capital:</span> <span class="value">Antananarivo</span>
-                    </div>
-                    <div class="data-item">
-                        <span class="label">Languages:</span> <span class="value">Malagasy, French</span>
-                    </div>
-                    <div class="data-item">
-                        <span class="label">Description:</span> <span class="value">A lemur's Aviary</span>
-                    </div>
-                    <div class="data-item">
-                        <span class="label">Time Zone:</span> <span class="value">UTC+3</span>
-                    </div>
-                    <div class="data-item">
-                        <span class="label">Calling Code:</span> <span class="value">+261</span>
-                    </div>
-                    <div class="data-item">
-                        <span class="label">Internet TLD:</span> <span class="value">.mg</span>
-                    </div>
+            <section class="stats-1">
+                <div class="text-banner">
+                    <h2>Data</h2>
                 </div>
+                <p>Area: <span class="value">587,041 sq km</span></p>
+                <p>Population: <span class="value">27,691,018</span></p>
+                <p>Capital: <span class="value">Antananarivo</span></p>
+                <p>Languages: <span class="value">Malagasy, French</span></p>
+                <p>Description: <span class="value">A lemur's Aviary</span></p>
+                <p>Time-Zone: <span class="value">UTC+3</span></p>
+                <p>Calling Code: <span class="value">+261</span></p>
+                <p>Internet TLD: <span class="value">.mg</span></p>
             </section>
 
-            <section class="weather-section">
-                <h2>Weather</h2>
+            <section class="stats-2">
+                <div class="text-banner">
+                    <h2>Weather</h2>
+                </div>
                 <div class="weather-icon">
                     <img src="images/place/weather-icon.svg" alt="Static weather Icon">
                 </div>
-                <div class="weather-details">
-                    <div class="weather-item">
-                        <span id="temp">Temperature:</span> <span class="value">10°C</span>
-                    </div>
-                    <div class="weather-item">
-                        <span id="condition">Conditions:</span> <span class="value">Partly Cloudy</span>
-                    </div>
-                    <div class="weather-item">
-                        <span id="speed">Wind:</span> <span class="value">10 mph</span>
-                    </div>
-                    <div class="weather-item">
-                        <span class="chill">Wind Chill:</span> <span class="value" id="windChillValue">N/A</span>
-                    </div>
-                </div>
+                <p>Temperature: </span> <span class="value">10°C</span></p>
+                <p>Conditions: <span class="value">Partly Cloudy</span></p>
+                <p>Wind: <span class="value">10 mph</span></p>
+                <p>Windchill: <span class="value" id="windChillValue"></span></p>
             </section>
+
         </div>
 
         <footer class="main-footer">
-            <p>copyright ©2025 <span id="current-year"></span>🌹 Damilola Adefenwa 🌹| Ibadan-Oyo, Nigeria </p>
+            <p>copyright ©2025 <span id="current-year"></span> | Damilola Adefenwa | Ibadan-Oyo, Nigeria </p>
             <p>Last Modified: <span id="last-modified"></span></p>
         </footer>
     </div>
+
 </body>
 
 </html>

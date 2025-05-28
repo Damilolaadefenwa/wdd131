@@ -240,29 +240,4 @@ body {
         /* So z-index works on header/footer content */
         z-index: 1;
     }
-
-    /* Arrange data and weather sections side-by-side for wider view */
-    /* .data-section {
-        width: calc(60% - 30px);
-        /* Roughly 60% width minus margin */
-    /* margin-right: 15px; 
-    } */
-
-    /* .weather-section {
-        width: calc(40% - 30px);
-        /* Roughly 40% width minus margin */
-    /* margin-left: 15px;
-    } */
-
-    /* To properly place .data-section and .weather-section side-by-side,
-        we need to wrap them in a div within index.html */
-
-    /* Flex container for data and weather sections */
-    /* .content-sections {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 20px;
-        margin-top: 20px;
-    } */
-
 }

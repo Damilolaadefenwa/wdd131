@@ -8,20 +8,21 @@ const lastModifiedSpan = document.getElementById("last-modified");
 const lastModifiedDate = document.lastModified;
 lastModifiedSpan.textContent = lastModifiedDate;
 
-// Static values matching the displayed values
-const temperature = 32; // °F
-const windSpeed = 10;   // mph
+//2. Calculating the windchill function
+// Creating Static values matching the displayed values
+const temperature = 10; // °C
+const windSpeed = 4.8;   // km/h
 
-function calculateWindChill(tempF, speed) {
+function calculateWindChill(tempC, speedKmh) {
+    // Convert Celsius to Fahrenheit and km/h to mph
+    const tempF = (tempC * 9 / 5) + 32;
+    const speedMph = speedKmh * 0.621371;
     // Wind chill formula for Fahrenheit and mph
-    return (tempF <= 50 && speed > 3)
-        ? Math.round(35.74 + 0.6215 * tempF - 35.75 * Math.pow(speed, 0.16) + 0.4275 * tempF * Math.pow(speed, 0.16))
+    return (tempF <= 50 && speedMph > 3)
+        ? Math.round(35.74 + 0.6215 * tempF - 35.75 * Math.pow(speedMph, 0.16) + 0.4275 * tempF * Math.pow(speedMph, 0.16))
         : "N/A";
 }
 
-// Display values
-document.getElementById('temp').textContent = temperature;
-document.getElementById('speed').textContent = windSpeed;
-document.getElementById('chill').textContent = calculateWindChill(temperature, windSpeed);
+document.getElementById('windchill').textContent = calculateWindChill(temperature, windSpeed) + " °C";
 
 

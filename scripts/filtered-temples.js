@@ -19,6 +19,30 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
+//Date: 30/05/2025
+//Created this to add a div element to my h1 tag instead of the formal overlay position style of h1
+document.addEventListener("DOMContentLoaded", function () {
+    function wrapH1ForSmallScreen() {
+        const h1 = document.querySelector('header h1');
+        if (window.innerWidth <= 700 && !h1.parentElement.classList.contains('h1-container')) {
+            // Create a div and wrap h1
+            const div = document.createElement('div');
+            div.className = 'h1-container';
+            h1.parentNode.insertBefore(div, h1);
+            div.appendChild(h1);
+        } else if (window.innerWidth > 700 && h1.parentElement.classList.contains('h1-container')) {
+            // Unwrap h1 if screen is large
+            const div = h1.parentElement;
+            div.parentNode.insertBefore(h1, div);
+            div.parentNode.removeChild(div);
+        }
+    }
+
+    wrapH1ForSmallScreen();
+    window.addEventListener('resize', wrapH1ForSmallScreen);
+});
+
+
 //DATE: 31/05/2025
 //3. Replacing the deleted html figures with dynamically generated HTML using JavaScript.
 const temples = [
@@ -100,52 +124,68 @@ const temples = [
         area: 4047,
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg",
     },
+    {
+        templeName: "Manhattan New York Temple",
+        location: "New-York, United State",
+        dedicated: "2004, June, 13",
+        area: 1214,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manhattan-new-york/400x250/manhattan-temple-lds-903670-wallpaper.jpg",
+    },
+    {
+        templeName: "Durban South Africa Temple",
+        location: "KwaZulu-Natal, South Africa",
+        dedicated: "2020, February, 16",
+        area: 58641,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/durban-south-africa/400x250/5-a34bb1899983ed73e499a18da741b3704e1d4d35.jpg",
+    },
 ];
-
-createTempleCards();
 
 //4.Loop through the array and create "temple cards" for each temple by displaying the required information:
 
-// function createTempleCards(temples, gallery) {
-//     const gallery = document.querySelector('.gallery');
-
+// function createTempleCards() {
 //     temples.forEach(temple => {
-//         // Create card container
-//         const card = document.createElement('section');
-//         card.classList.add('temple-card');
-//         // Temple name
-//         const name = document.createElement('h3');
-//         name.textContent = temple.templeName;
-//         // Location
-//         const location = document.createElement('p');
-//         location.textContent = `Location: ${temple.location}`;
-//         // Dedicated date
-//         const dedicated = document.createElement('p');
-//         dedicated.textContent = `Dedicated: ${temple.dedicated}`;
-//         // Area
-//         const area = document.createElement('p');
-//         area.textContent = `Area: ${temple.area.toLocaleString()} sq ft`;
-//         // Image
-//         const img = document.createElement('img');
-//         img.src = temple.imageUrl;
-//         img.alt = temple.templeName;
-//         img.loading = "lazy";
+//         let card = document.createElement("section");
+//         let name = document.createElement("h3");
+//         let location = document.createElement("p");
+//         let dedication = document.createElement("p");
+//         let area = document.createElement("p");
+//         let img = document.createElement("img");
 
-//         // Append all elements to the card
+//         name.textContent = temple.templeName;
+//         location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+//         dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+//         area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
+//         img.setAttribute("src", temple.imageUrl);
+//         img.setAttribute("alt", `${temple.templeName} Temple`);
+//         img.setAttribute("loading", "lazy");
+
 //         card.appendChild(name);
 //         card.appendChild(location);
-//         card.appendChild(dedicated);
+//         card.appendChild(dedication);
 //         card.appendChild(area);
 //         card.appendChild(img);
 
-//         // Append card to gallery
-//         gallery.appendChild(card);
+//         document.querySelector(".gallery").appendChild(card);
 //     });
+
 // }
 
-function createTempleCards() {
-    temples.forEach(temple => {
+// Display the temple cards(images) by calling the function
+// createTempleCards();
+
+const demandMercy = "Marcy";
+
+//5.Respond to the main navigation menu items by filtering and displaying the required information;
+//comment out the createTempleCard to create displayfilteredtemple inorder to maintain consistency.
+
+// Helper function to clear and display temples
+function displayFilteredTemples(filteredTemples) {
+    const gallery = document.querySelector(".gallery");
+    gallery.innerHTML = ""; // Clear previous cards
+
+    filteredTemples.forEach(temple => {
         let card = document.createElement("section");
+        card.classList.add("temple-card");
         let name = document.createElement("h3");
         let location = document.createElement("p");
         let dedication = document.createElement("p");
@@ -166,33 +206,49 @@ function createTempleCards() {
         card.appendChild(area);
         card.appendChild(img);
 
-        document.querySelector(".gallery").appendChild(card);
+        gallery.appendChild(card);
     });
-
 }
 
+// Add event listeners to nav menu items
+document.querySelectorAll('#main-nav a').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
 
+        // Remove 'active' class from all links and add to clicked one
+        document.querySelectorAll('#main-nav a').forEach(a => a.classList.remove('active'));
+        this.classList.add('active');
 
+        let filter = this.textContent.trim();
 
-
-//Created this to add a div element to my h1 tag instead of the formal overlay position style of h1
-document.addEventListener("DOMContentLoaded", function () {
-    function wrapH1ForSmallScreen() {
-        const h1 = document.querySelector('header h1');
-        if (window.innerWidth <= 700 && !h1.parentElement.classList.contains('h1-container')) {
-            // Create a div and wrap h1
-            const div = document.createElement('div');
-            div.className = 'h1-container';
-            h1.parentNode.insertBefore(div, h1);
-            div.appendChild(h1);
-        } else if (window.innerWidth > 700 && h1.parentElement.classList.contains('h1-container')) {
-            // Unwrap h1 if screen is large
-            const div = h1.parentElement;
-            div.parentNode.insertBefore(h1, div);
-            div.parentNode.removeChild(div);
+        let filtered;
+        switch (filter) {
+            case "Old":
+                filtered = temples.filter(t => {
+                    // Extract year from dedicated string
+                    let year = parseInt(t.dedicated.split(',')[0]);
+                    return year < 1900;
+                });
+                break;
+            case "New":
+                filtered = temples.filter(t => {
+                    let year = parseInt(t.dedicated.split(',')[0]);
+                    return year > 2000;
+                });
+                break;
+            case "Large":
+                filtered = temples.filter(t => t.area > 90000);
+                break;
+            case "Small":
+                filtered = temples.filter(t => t.area < 10000);
+                break;
+            default: // Home
+                filtered = temples;
         }
-    }
 
-    wrapH1ForSmallScreen();
-    window.addEventListener('resize', wrapH1ForSmallScreen);
+        displayFilteredTemples(filtered);
+    });
 });
+
+// Display all temples on initial page load
+displayFilteredTemples(temples);

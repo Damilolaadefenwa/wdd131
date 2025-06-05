@@ -50,12 +50,12 @@ header h2 {
 }
 
 a {
-    color: var(--Chestnut);
+    color: royalblue;
     /* text-decoration: ; */
 }
 
 a:hover {
-    color: skyblue;
+    color: var(--Chestnut);
     text-decoration: underline;
 }
 
@@ -78,7 +78,7 @@ main {
 h2 {
     font-family: var(--merriweather-regular-font-family);
     font-weight: bold;
-    color: var(--Crayola);
+    color: var(--brunswick-green);
 }
 
 section {

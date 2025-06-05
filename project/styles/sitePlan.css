@@ -138,16 +138,6 @@ section {
     color: var(--white);
 }
 
-/* .headerEx,
-.bodyEx,
-.footerEx p {
-    /* margin: 0; */
-/* Remove default margin */
-/* padding: 0 1rem; */
-/* Add horizontal padding for spacing */
-/* width: 100%; 
-} */
-
 figure {
     display: flex;
     flex-direction: column;

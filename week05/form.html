@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="description" content="This page demonstrates a simple responsive form">
+    <meta name="author" content="Damilola Adefenwa">  
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>     
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <fieldset>
+                <legend>Product Name</legend>
+                <label>Product
+                    <select name="product" required>
+                        <option value="" disabled selected>Select a product</option>
+                        <option value="laptop">Laptop</option>
+                        <option value="smartphone">Smartphone</option>
+                        <option value="tablet">Tablet</option>
+                    </select>
+
+                </label>
+
+
+            </fieldset>
+            
+        </form>
+    </main>
+    <footer>
+        <p>©2025 <span id="current-year"></span>🌹 Damilola Adefenwa 🌹| Ibadan-Oyo, Nigeria </p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>

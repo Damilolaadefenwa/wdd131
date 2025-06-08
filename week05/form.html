@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <meta name="description" content="This page demonstrates a simple responsive form">
-    <meta name="author" content="Damilola Adefenwa">  
+    <meta name="author" content="Damilola Adefenwa">
     <link rel="stylesheet" href="styles/form.css">
-    <script src="scripts/form.js" defer></script>     
+    <script src="scripts/form.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>Product Review</h1>
@@ -16,20 +18,17 @@
     <main>
         <form action="review.html" method="get">
             <fieldset>
-                <legend>Product Name</legend>
-                <label>Product
-                    <select name="product" required>
-                        <option value="" disabled selected>Choose a product</option>
-                        <option value="laptop">Laptop</option>
-                        <option value="smartphone">Smartphone</option>
-                        <option value="tablet">Tablet</option>
-                    </select>
-
-                </label>
+                <label>Product Name</label>
+                <select id="selectpro" name="product" required>
+                    <option value="" disabled selected>Choose a product</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="smartphone">Smartphone</option>
+                    <option value="tablet">Tablet</option>
+                </select>
 
 
             </fieldset>
-            
+
         </form>
     </main>
     <footer>
@@ -37,4 +36,5 @@
         <p>Last Modified: <span id="last-modified"></span></p>
     </footer>
 </body>
+
 </html>

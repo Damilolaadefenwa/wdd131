@@ -8,6 +8,23 @@ body {
     padding: 0;
 }
 
+header {
+    width: 80%;
+    background-color: #d4d4d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
+    box-sizing: border-box;
+}
+
+header h1 {
+    margin: 0;
+    color: #222;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -17,10 +34,6 @@ main {
     min-height: 100vh;
     background: #fafafa;
     width: 80%;
-}
-
-h1 {
-    text-align: center;
 }
 
 p {
@@ -47,13 +60,30 @@ img {
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
+    /* Stack footer content vertically */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
     background: #d4d4d4;
-    padding: 1rem;
-    text-align: center;
-    font-size: 1.5rem;
+    padding: 0.5rem;
+    /* Add more space around the text */
+    font-size: 1.2rem;
     color: #000;
     width: 80%;
+    box-sizing: border-box;
+    /* Include padding in width */
 }
+
+footer p {
+    margin: 0;
+    /* Remove default margin */
+    padding: 0.5rem;
+    /* Add padding for spacing */   
+}
+
 
 /* This styling is for the javaScript Object table */
 h2 {

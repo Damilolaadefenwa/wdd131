@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 80%;
+    background-color: #2D032B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
+    box-sizing: border-box;
+    margin-bottom: 2.3rem;
+    /* Add space below the header */
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #fafafa;
+    /* background: #D5CDD5; */
+    width: 80%;
+}
+
+/*----------- FORM STYLING--------------*/
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    /* Stack footer content vertically */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    background: #2D032B;
+    padding: 0.5rem;
+    /* Add more space around the text */
+    font-size: 1.2rem;
+    color: #fff;
+    width: 80%;
+    box-sizing: border-box;
+    /* Include padding in width */
+}
+
+footer p {
+    margin: 0;
+    /* Remove default margin */
+    padding: 0.5rem;
+    /* Add padding for spacing */
+}

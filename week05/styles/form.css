@@ -56,6 +56,23 @@ main {
     box-sizing: border-box;
 }
 
+.wf2 legend {
+    color: #2D032B;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    letter-spacing: 1px;
+    text-align: left;
+    width: auto;
+    /*let legend size to its content*/
+    display: block;
+    background: #D5CDD5;
+    box-sizing: border-box;
+}
+
 .wf2 div {
     padding-top: 1rem;
     font-size: 1rem;
@@ -86,7 +103,6 @@ main {
     margin-top: 0.1em;
     margin-bottom: 0;
     gap: 0;
-
 }
 
 .star-option {
@@ -198,6 +214,23 @@ textarea {
 .wf2 input[type="submit"]:hover {
     background: #2D032B;
     color: #fff;
+}
+
+.wf2 input:required {
+    border-bottom: solid 3px red;
+}
+
+.wf2 select:required {
+    border-bottom: 3px solid red;
+    /* Or use border: 2px solid red; for all sides */
+}
+
+.wf2 input:required:valid {
+    border-bottom: solid 3px green;
+}
+
+.wf2 select:required:valid {
+    border-bottom: solid 3px green;
 }
 
 /*----------- END FORM STYLING--------------*/

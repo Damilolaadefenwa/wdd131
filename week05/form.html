@@ -18,7 +18,8 @@
     <main>
         <form action="review.html" method="get" class="wf2">
             <fieldset>
-                <div class="div-heading">Product Name</div>
+                <legend>Review Form</legend>
+                <label for="products" class="div-heading">Product Name</label>
                 <select id="products" name="productName" required>
                     <option value="" disabled selected>Choose a product</option>
                     <!-- <option id="fc-1888" value="flux capacitor">Flux Capacitor</option>
@@ -60,13 +61,14 @@
                 <div class="div-heading">Which features did you find useful in the product?
                     <span>(Check all that apply)</span>
                 </div>
-                <label for="durability"><input type="checkbox" id="durability" name="features" value="durability">
-                    Durability</label>
-                <label for="easeofuse"><input type="checkbox" id="easeofuse" name="features" value="ease of use"> Ease
-                    of Use</label>
-                <label for="performance"><input type="checkbox" id="performance" name="features"
-                        value="performance">Performance</label>
-                <label for="design"><input type="checkbox" id="design" name="features" value="design"> Design</label>
+                <input type="checkbox" id="durability" name="features" value="durability">
+                <label for="durability">Durability</label>
+                <input type="checkbox" id="easeofuse" name="features" value="ease of use">
+                <label for="easeofuse">Ease of Use</label>
+                <input type="checkbox" id="performance" name="features" value="performance">
+                <label for="performance">Performance</label>
+                <input type="checkbox" id="design" name="features" value="design">
+                <label for="design">Design</label>
 
                 <div class="review">Written Review <span>(Optional)</span></div>
                 <textarea id="review" name="review" rows="4" cols="50"
@@ -76,7 +78,7 @@
                 <input type="text" id="reviewerName" name="reviewerName">
 
                 <div>
-                    <input type="submit" value="Post Review">
+                    <button type="submit">Post Review</button>
                 </div>
             </fieldset>
         </form>

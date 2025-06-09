@@ -9,6 +9,11 @@
     <meta name="author" content="Damilola Adefenwa">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -70,11 +75,12 @@
                 <input type="checkbox" id="design" name="features" value="design">
                 <label for="design">Design</label>
 
-                <div class="review">Written Review <span>(Optional)</span></div>
+                <label for="review" class="review">Written Review <span>(Optional)</span></label>
                 <textarea id="review" name="review" rows="4" cols="50"
-                    placeholder="Write your review here..."></textarea>
+                    placeholder="Write your review here...">
+                </textarea>
 
-                <div class="review">Your Name <span>(Optional)</span></div>
+                <label for="reviewerName" class="review">Your Name <span>(Optional)</span></label>
                 <input type="text" id="reviewerName" name="reviewerName">
 
                 <div>

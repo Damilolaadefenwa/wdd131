@@ -7,6 +7,8 @@ body {
     margin: 0;
     padding: 0;
     background: #f4f4f4;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
 }
 
 header {
@@ -26,6 +28,8 @@ header h1 {
     color: #fff;
     font-size: 2.5rem;
     text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
 }
 
 main {
@@ -167,6 +171,7 @@ main {
     padding-top: 1rem;
     font-size: 1rem;
     font-weight: bold;
+    font-family: "Roboto", sans-serif;
 }
 
 .review span {
@@ -175,6 +180,7 @@ main {
     font-style: italic;
     font-weight: normal;
     font-size: 0.95em;
+    font-family: "Roboto", sans-serif;
     margin-left: 0.5em;
 }
 

@@ -41,9 +41,10 @@ main {
 /*----------- FORM STYLING--------------*/
 
 .wf2 {
-    width: 100%;
+    width: 95%;
     max-width: 630px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .wf2 fieldset {
@@ -136,14 +137,17 @@ main {
     margin-right: 0.5em;
 }
 
-div span {
+.div-heading span {
     display: block;
     font-size: 0.95em;
-    color: #303030;
+    color: #000;
     font-style: italic;
+    font-weight: normal;
+    margin-top: 0.5em;
 }
 
-.review, .div-heading {
+.review,
+.div-heading {
     padding-top: 1rem;
     font-size: 1rem;
     font-weight: bold;
@@ -151,7 +155,7 @@ div span {
 
 .review span {
     display: inline;
-    color: blue;
+    color: #000;
     font-style: italic;
     font-weight: normal;
     font-size: 0.95em;
@@ -218,4 +222,66 @@ footer p {
     padding: 0.5rem;
     /* Add padding for spacing */
     text-align: center;
+}
+
+/* Responsive styles for small screen */
+@media (max-width: 600px) {
+    header {
+        padding: 1rem 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .wf2 {
+        width: 99%;
+        max-width: 99%;
+        padding: 0.5rem;
+    }
+
+    .wf2 fieldset {
+        padding: 0.7rem 0.5rem 1rem 0.5rem;
+    }
+
+    .div-heading,
+    .review {
+        font-size: 0.95rem;
+        padding-top: 0.7rem;
+    }
+
+    .star-option label {
+        font-size: 1.1em;
+    }
+
+    textarea,
+    .wf2 input[type="text"],
+    .wf2 input[type="date"],
+    .wf2 select {
+        font-size: 1em;
+        padding: 0.5em;
+    }
+
+    .wf2 button,
+    .wf2 input[type="submit"] {
+        font-size: 1em;
+        padding: 0.8em;
+    }
+}
+
+/* Responsive styles for larger screens */
+
+@media (min-width: 1000px) {
+    .wf2 {
+        max-width: 700px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+}
+
+/* Make footer responsive */
+footer {
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem 0.2rem 0.5rem 0.2rem;
+    box-sizing: border-box;
 }

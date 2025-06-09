@@ -233,6 +233,24 @@ textarea {
     border-bottom: solid 3px green;
 }
 
+.rating {
+    border-bottom: 5px solid transparent;
+    padding-bottom: 0.5em;
+}
+
+.rating input[type="radio"]:required,
+.rating input[type="radio"]:required {
+    /* fallback for browsers, but not perfect */
+    outline: 1.5px solid red;
+}
+
+.rating input[type="radio"]:required:valid,
+.rating input[type="radio"]:required:valid {
+    /* fallback for browsers, but not perfect */
+    outline: 1.5px solid green;
+}
+
+
 /*----------- END FORM STYLING--------------*/
 
 footer {

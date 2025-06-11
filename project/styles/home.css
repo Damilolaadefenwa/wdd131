@@ -157,17 +157,25 @@ body {
     overflow: hidden;
 }
 
- .hero-section picture, 
- .hero-section img {
+.hero-section picture {
+    position: static;
     width: 100%;
     height: 100%;
-    object-fit: cover;/* Cover the container without distortion */
+    display: block;
+    z-index: 1;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
 }
+
 
 .hero-content {
     position: absolute;
@@ -328,10 +336,7 @@ body {
         display: none;
         flex-direction: column;
         background: var(--brunswick-green);
-        position: absolute;
-        top: 60px;
-        /* adjust as needed */
-        right: 0;
+        position: static;
         width: 100%;
         z-index: 1000;
         padding: 0;
@@ -410,16 +415,31 @@ body {
         gap: 30px;
     }
 
-    .support-content,
-    .support-image {
+    .support-content {
         max-width: 100%;
     }
 
-    .main-footer {
-        padding: 15px;
-        /* Slightly less padding for mobile footer */
+
+    .support-image {
+        display: block;
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .support-image img {
+        width: 100%;
+        height: auto;
+        display: block;
     }
 }
+
+.main-footer {
+    padding: 15px;
+    /* Slightly less padding for mobile footer */
+}
+
 
 /* Large screen adjustments (if needed beyond general styles) */
 @media (min-width: 1024px) {

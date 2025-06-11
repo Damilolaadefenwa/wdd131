@@ -1,0 +1,21 @@
+:root {
+    --brunswick-green: #293E31ff;
+    --Crayola: #FE8340ff;
+    --Bone: #DACEC2ff;
+    --white: rgb(255, 255, 255);
+
+    --merriweather-regular-font-family: "Merriweather", sans-serif;
+    --merriweather-regular-font-weight: 400;
+    --merriweather-regular-font-style: normal;
+    --merriweather-bold-font-family: "Merriweather", sans-serif;
+    --merriweather-bold-font-weight: 700;
+    --merriweather-bold-font-style: border;
+
+    --lato-regular-font-family: "Lato", sans-serif;
+    --lato-regular-font-weight: 400;
+    --lato-regular-font-style: normal;
+    --lato-bold-font-family: "Lato", sans-serif;
+    --lato-bold-font-weight: 600;   
+    --lato-bold-font-style: border;      
+}
+

@@ -1,11 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Conservation Collective Club | Home </title>
+    <meta name="description" content="This is a site for go-to-guide about nature conservation parks in Lagos-Nigera">
+    <meta name="author" content="Damilola Adefenwa">
+
+    <!-- STYLE SHEETS, FONTS & JavaScript -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/home.css">
+
+    <script src="scripts/project.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+    <div class="page-container">
+        <header class="main-header">
+            <div class="header-top-bar">
+                <div class="logo">
+                    The Conservation Collective Club
+                    <span>"Nurturing Nature!Empowering Community!!</span>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="parkspage.html">Nature Parks</a></li>
+                        <li><a href="wildlifepage.html">WildLife</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-bottom-bar">
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><span class="icon">&#xf09a;</span></a> <a href="#"
+                        aria-label="Instagram"><span class="icon">&#xf16d;</span></a>
+                    <a href="#" aria-label="Twitter"><span class="icon">&#xf099;</span></a>
+                </div>
+            </div>
+        </header>
+
+        <section class="hero-section">
+            <div class="hero-slider">
+                <picture>
+                    <source srcset="images/homeherolarge-1.webp" class="slide-image active" media="(min-width: 1000px)">
+                    <source srcset="images/homeherolarge-2.webp" class="slide-image" media="(min-width: 1000px)">
+                    <img src="images/homeherosmall-1.webp" alt="Manificient-Lion-Portral" class="slide-image active" width="640" height="850">
+                    <img src="images/homeherosmall-2.webp" alt="Manificient-Elephant-Portray" class="slide-image" width="640" height="850">
+                </picture>
+            </div>
+            <div class="hero-content">
+                <h1>The Conservation Collective <br> Club</h1>
+                <p>Connecting You with Lagos' Green Heart.</p>
+                <a href="contact.html" class="btn primary-btn">Join Us</a>
+            </div>
+        </section>
+
+        <section class="support-section">
+            <div class="support-content">
+                <h3>Support Sustainable <br> Farming</h3>
+                <p>
+                    I'm a paragraph. Click here to add your own text and edit me.
+                    It's easy. Just click "Edit Text" or double click me to
+                    add your own content and make changes to the font. I'm a
+                    great place for you to tell a story and let your users know a
+                    little more about you.
+                </p>
+                <a href="#" class="btn secondary-btn">Join Our CSA</a>
+            </div>
+            <div class="support-image">
+                <img src="images/farm-illustration.png" alt="Farm illustration with windmill and barn">
+            </div>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 Deerfield Farm. All rights reserved.</p>
+        <p>123 Farm Lane, Rural Town, State, 12345</p>
+        <p>Contact: info@deerfieldfarm.com | (555) 123-4567</p>
+    </footer>
+
 </body>
+
 </html>

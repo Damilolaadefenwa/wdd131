@@ -36,16 +36,8 @@ body {
     background-color: #f4f4f4;
 }
 
-.page-container {
-    width: 100%;
-    max-width: 1400px;
-    /* Max width for the entire layout */
-    margin: 0 auto;
-    background-color: var(--white-text);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
 
-/*---- Header Styling -----*/
+/*---- Header Styling ----- */
 .main-header {
     background-color: var(--brunswick-green);
     color: var(--white-text);
@@ -85,12 +77,12 @@ body {
     padding-left: 20px;
 }
 
-/*----- Navigation Element Styling ------*/
+/* ----- Navigation Styling ------ */
 .main-nav {
     flex: 1 1 auto;
     display: flex;
     justify-content: flex-end;
-    
+    /* position: relative; */
 }
 
 .main-nav ul {
@@ -121,7 +113,7 @@ body {
     color: var(--Crayola-orange);
 }
 
-/* Hamburger/mobile/small/ view navigation styling **/
+/* ----** Hamburger/small/mobile view navigation -----**/
 #menu {
     font-size: 1.5rem;
     font-weight: 500;
@@ -147,152 +139,17 @@ body {
     display: block;
 }
 
-/*----Hero Section styling -----*/
-.hero-section {
-    position: relative;
-    width: 100%;
-    min-height: 400px;
-    height: 60vh;
-    /* responsive height */
-    overflow: hidden;
-}
 
-.hero-section picture {
-    position: static;
-    width: 100%;
-    height: 100%;
-    display: block;
-    z-index: 1;
-}
+/*------ Main Section ----- */
 
-.hero-section img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+main {
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 60vh; /* Ensures main section takes up space */
 }
 
 
-.hero-content {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-    z-index: 2;
-    color: var(--white-text);
-    /* Semi-transparent overlay for text readability */
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
-    max-width: 40vw;
-}
-
-.hero-content h1 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-    line-height: 1.1;
-    font-family: var(--merriweather-regular-font-weight);
-    color: var(--white-text);
-}
-
-.hero-content p {
-    font-size: 1.2em;
-    margin-top: 0;
-    font-family: var(--lato-regular-font-family);
-    color: var(--white-text);
-}
-
-/*--- Buttons Styling----*/
-.btn {
-    display: inline-block;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.primary-btn {
-    background-color: var(--btn-primary-bg);
-    color: var(--text-color);
-    border: 2px solid var(--btn-primary-bg);
-}
-
-.primary-btn:hover {
-    background-color: darken(var(--btn-primary-bg), 10%);
-    /* Requires Sass, use fixed color */
-    background-color: #c13406;
-    /* Example darker orange */
-    transform: translateY(-2px);
-}
-
-.secondary-btn {
-    background-color: var(--btn-secondary-bg);
-    color: var(--text-color);
-    border: 2px solid var(--btn-secondary-bg);
-}
-
-.secondary-btn:hover {
-    background-color: darken(var(--btn-secondary-bg), 10%);
-    /* Requires Sass, use fixed color */
-    background-color: #c13406;
-    /* Example darker orange */
-    transform: translateY(-2px);
-}
-
-/*---Support Section Styling ---- */
-.support-section {
-    display: flex;
-    flex-direction: row;
-    /* Default for larger screens */
-    justify-content: center;
-    align-items: center;
-    padding: 50px 20px;
-    gap: 100px;
-    background-color: var(--Bone-grey);
-}
-
-.support-content {
-    flex: 1;
-    max-width: 500px;
-}
-
-.support-content h2 {
-    font-size: 2.2em;
-    color: var(--text-color);
-    margin-top: 0;
-}
-
-.support-content p {
-    margin-bottom: 25px;
-    color: var(--text-color);
-}
-
-.support-content span {
-    display: inline-block;
-    font-size: 1em;
-    font-weight: bold;
-    color: var(--text-color);
-    font-family: var(--lato-regular-font-family);
-}
-
-.support-image {
-    flex: 1;
-    max-width: 400px;
-    /* text-align: center; */
-    text-align: right;
-}
-
-.support-image img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/*---- Footer Styling ---- */
+/*----- Footer Styling------- */
 .main-footer {
     display: flex;
     justify-content: space-between;
@@ -399,50 +256,8 @@ body {
         padding: 8px 15px;
     }
 
-    .hero-section {
-        min-height: 600px;
-        height: 40vh;
-        /* Responsive height for mobile */
-    }
+    
 
-    .hero-content {
-        left: 5%;
-        margin-bottom: 5%;
-        max-width: 90vw;
-        /* Adjust content width for mobile */
-    }
-
-    .hero-content h1 {
-        font-size: 2em;
-    }
-
-    .hero-content p {
-        font-size: 1em;
-    }
-
-    .support-section {
-        flex-direction: column;
-        /* Stack content and image vertically */
-        padding: 30px 15px;
-        gap: 50px;
-    }
-
-    .support-content {
-        max-width: 100%;
-    }
-    .support-image {
-        display: block;
-        width: 100%;
-        max-width: 350px;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .support-image img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
 
     .main-footer {
         flex-direction: column;
@@ -475,11 +290,8 @@ body {
 /* Large screen adjustments (if needed beyond general styles) */
 @media (min-width: 1024px) {
 
-    /* Adjustments for very large screens or specific element sizing */
-    .page-container {
-        border-radius: 10px;
-    }
-
+    /* Adjustments specific element sizing */
+    
     #menu {
         display: none;
         /* hide hamburger button */
@@ -492,12 +304,5 @@ body {
         background: none;
     }
 
-    .hero-section {
-        height: 550px;
-        /* Taller hero section on very large screens */
-    }
 
-    .hero-content h1 {
-        font-size: 3.5em;
-    }
 }

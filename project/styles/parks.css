@@ -36,16 +36,7 @@ body {
     background-color: #f4f4f4;
 }
 
-.page-container {
-    width: 100%;
-    max-width: 1400px;
-    /* Max width for the entire layout */
-    margin: 0 auto;
-    background-color: var(--white-text);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-/*---- Header Styling -----*/
+/*--- Header Styling ---- */
 .main-header {
     background-color: var(--brunswick-green);
     color: var(--white-text);
@@ -85,12 +76,12 @@ body {
     padding-left: 20px;
 }
 
-/*----- Navigation Element Styling ------*/
+/*----Navigation Styling-----*/
 .main-nav {
     flex: 1 1 auto;
     display: flex;
     justify-content: flex-end;
-    
+    /* position: relative; */
 }
 
 .main-nav ul {
@@ -121,7 +112,7 @@ body {
     color: var(--Crayola-orange);
 }
 
-/* Hamburger/mobile/small/ view navigation styling **/
+/* Hamburger/mobile/ small view navigation **/
 #menu {
     font-size: 1.5rem;
     font-weight: 500;
@@ -147,8 +138,8 @@ body {
     display: block;
 }
 
-/*----Hero Section styling -----*/
-.hero-section {
+/*---Hero Park Section Styling ----- */
+.hero-parks-section {
     position: relative;
     width: 100%;
     min-height: 400px;
@@ -157,7 +148,7 @@ body {
     overflow: hidden;
 }
 
-.hero-section picture {
+.hero-parks-section picture {
     position: static;
     width: 100%;
     height: 100%;
@@ -165,7 +156,7 @@ body {
     z-index: 1;
 }
 
-.hero-section img {
+.hero-parks-section img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -176,8 +167,7 @@ body {
     z-index: 1;
 }
 
-
-.hero-content {
+.hero-parks-content {
     position: absolute;
     top: 50%;
     left: 10%;
@@ -189,7 +179,7 @@ body {
     max-width: 40vw;
 }
 
-.hero-content h1 {
+.hero-parks-content h1 {
     font-size: 1.8em;
     margin-bottom: 10px;
     line-height: 1.1;
@@ -197,14 +187,14 @@ body {
     color: var(--white-text);
 }
 
-.hero-content p {
+.hero-parks-content p {
     font-size: 1.2em;
     margin-top: 0;
     font-family: var(--lato-regular-font-family);
     color: var(--white-text);
 }
 
-/*--- Buttons Styling----*/
+/* Buttons styling */
 .btn {
     display: inline-block;
     padding: 12px 25px;
@@ -242,7 +232,7 @@ body {
     transform: translateY(-2px);
 }
 
-/*---Support Section Styling ---- */
+/* Main-tag & Support Section Styling */
 .support-section {
     display: flex;
     flex-direction: row;
@@ -292,7 +282,7 @@ body {
     margin: 0 auto;
 }
 
-/*---- Footer Styling ---- */
+/* Footer Styling */
 .main-footer {
     display: flex;
     justify-content: space-between;
@@ -399,26 +389,31 @@ body {
         padding: 8px 15px;
     }
 
-    .hero-section {
+    /*---- Hero Section styling--- */
+
+    .hero-parks-section {
         min-height: 600px;
         height: 40vh;
         /* Responsive height for mobile */
     }
 
-    .hero-content {
+    .hero-parks-content {
         left: 5%;
         margin-bottom: 5%;
         max-width: 90vw;
         /* Adjust content width for mobile */
     }
 
-    .hero-content h1 {
+    .hero-parks-content h1 {
         font-size: 2em;
     }
 
-    .hero-content p {
+    .hero-parks-content p {
         font-size: 1em;
     }
+
+
+    /*---- Main Content styling--- */
 
     .support-section {
         flex-direction: column;
@@ -444,6 +439,8 @@ body {
         display: block;
     }
 
+
+    /*--- Footer Section Styling--- */
     .main-footer {
         flex-direction: column;
         align-items: center;

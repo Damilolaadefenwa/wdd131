@@ -147,62 +147,6 @@ body {
     display: block;
 }
 
-/*----Hero Section styling -----*/
-.hero-section {
-    position: relative;
-    width: 100%;
-    min-height: 400px;
-    height: 60vh;
-    /* responsive height */
-    overflow: hidden;
-}
-
-.hero-section picture {
-    position: static;
-    width: 100%;
-    height: 100%;
-    display: block;
-    z-index: 1;
-}
-
-.hero-section img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
-
-.hero-content {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-    z-index: 2;
-    color: var(--white-text);
-    /* Semi-transparent overlay for text readability */
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
-    max-width: 40vw;
-}
-
-.hero-content h1 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-    line-height: 1.1;
-    font-family: var(--merriweather-regular-font-weight);
-    color: var(--white-text);
-}
-
-.hero-content p {
-    font-size: 1.2em;
-    margin-top: 0;
-    font-family: var(--lato-regular-font-family);
-    color: var(--white-text);
-}
 
 /*--- Buttons Styling----*/
 .btn {
@@ -242,7 +186,7 @@ body {
     transform: translateY(-2px);
 }
 
-/*---Support Section Styling ---- */
+/*---Support Div Section Styling ---- */
 .support-section {
     display: flex;
     flex-direction: row;
@@ -291,6 +235,10 @@ body {
     display: block;
     margin: 0 auto;
 }
+
+/*----Main/Form Section styling -----*/
+
+
 
 /*---- Footer Styling ---- */
 .main-footer {

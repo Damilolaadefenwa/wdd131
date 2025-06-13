@@ -232,7 +232,134 @@ body {
     transform: translateY(-2px);
 }
 
-/* Main-tag & Support Section Styling */
+/*----Main-tag & Support Section Styling----*/
+/* Example CSS for the described classes */
+
+/* Heading styling */
+/* .div-heading {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+} */
+
+.div-heading {
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.div-heading::after {
+    content: "";
+    display: block;
+    width: 120px;
+    /* Adjust width as needed */
+    height: 3px;
+    /* Thickness of the border */
+    margin: 18px auto 0 auto;
+    /* Space above the border */
+    background: #293E31ff;
+    /* Border color */
+    box-shadow: 0 4px 8px rgba(33, 122, 59, 0.3);
+    /* Shadow effect */
+    border-radius: 2px;
+}
+
+
+.div-heading h2 {
+    color: var(--brunswick-green);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.div-heading p {
+    color: var(--text-color);
+    font-size: 0.95rem;
+    max-width: 600px;
+    margin: 0 auto;
+    /* border-bottom: 1px solid #293E31ff; */
+    /* padding-bottom: 18px; */
+}
+
+/* Card base styles */
+.cards-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.parks-card1 {
+    display: flex;
+    align-items: flex-start;
+    margin: 60px 0;
+    gap: 40px;
+}
+
+.parks-card2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: right;
+    margin: 60px 0;
+    gap: 40px;
+}
+
+/* Card image container with layered effect */
+.card-image-container {
+    position: relative;
+    width: 260px;
+    min-width: 260px;
+    height: 320px;
+    /* margin-top: 10px; */
+    position: relative;
+}
+
+.card-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.09);
+    transform: rotate(-2deg);
+}
+
+/* Green outline behind image */
+.card-image-container::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #293E31ff;
+    z-index: 1;
+    border-radius: 4px;
+    transform: rotate(3deg);
+}
+
+/* Card text */
+.card-text {
+    flex: 1;
+    /* margin-top: 30px; */
+}
+
+.card-text h3 {
+    color: var(--brunswick-green);
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text p {
+    color: var(--text-color);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    max-width: 700px;
+}
+
+/*----Support Section Styling--- */
 .support-section {
     display: flex;
     flex-direction: row;
@@ -384,13 +511,7 @@ body {
         font-weight: normal;
     }
 
-    .footer-bottom-bar {
-        justify-content: center;
-        padding: 8px 15px;
-    }
-
-    /*---- Hero Section styling--- */
-
+    /*---- Hero Section Responsiveness--- */
     .hero-parks-section {
         min-height: 600px;
         height: 40vh;
@@ -413,8 +534,20 @@ body {
     }
 
 
-    /*---- Main Content styling--- */
+    /*---- Main Content Responsiveness--- */
+    .parks-card1,
+    .parks-card2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 
+    .card-image-container,
+    .card-text {
+        margin-top: 0;
+    }
+
+    /*---- Support Section Responsiveness--- */
     .support-section {
         flex-direction: column;
         /* Stack content and image vertically */
@@ -425,6 +558,7 @@ body {
     .support-content {
         max-width: 100%;
     }
+
     .support-image {
         display: block;
         width: 100%;
@@ -440,7 +574,7 @@ body {
     }
 
 
-    /*--- Footer Section Styling--- */
+    /*--- Footer Section Responsivesness--- */
     .main-footer {
         flex-direction: column;
         align-items: center;
@@ -454,6 +588,11 @@ body {
         font-size: 0.98em;
         margin-bottom: 0;
     }
+
+    /* .footer-bottom-bar {
+        justify-content: center;
+        padding: 8px 15px;
+    } */
 
     .footer-icon-bar {
         justify-content: center;

@@ -102,18 +102,14 @@ const galleryImages = [
     },
 ];
 
-// Function to display (and optionally filter) gallery images
+// Function to display gallery images and no filter apply
 function displayGalleryImages(filterFn = null) {
     const galleryContainer = document.querySelector('.gallery');
     if (!galleryContainer) return;
 
-    // Optionally filter images
     const imagesToShow = filterFn ? galleryImages.filter(filterFn) : galleryImages;
-
-    // Clear previous content
     galleryContainer.innerHTML = '';
 
-    // Create and append image cards
     imagesToShow.forEach(img => {
         const card = document.createElement('div');
         card.className = 'gallery-card';
@@ -122,6 +118,7 @@ function displayGalleryImages(filterFn = null) {
         image.src = img.filePath;
         image.alt = img.title;
         image.className = 'gallery-img';
+        image.loading = 'lazy'; // <-- Add this line for lazy loading
 
         const title = document.createElement('h4');
         title.textContent = img.title;

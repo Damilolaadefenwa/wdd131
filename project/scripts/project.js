@@ -44,7 +44,7 @@ const galleryImages = [
         title: "Cross River Gorilla",
         park: "NCF-LCC",
         status: "Endangered",
-        filePath: "images/crossriverGorrilla.webp"
+        filePath: "images/crossriverGorilla.webp"
     },
     {
         title: "Giraffe",
@@ -98,7 +98,7 @@ const galleryImages = [
         title: "West Africa Vulture",
         park: "NCF-LCC",
         status: "Endangered",
-        filePath: "images/westAfricaVultures.webp"
+        filePath: "images/westAfricanVultures.webp"
     },
 ];
 

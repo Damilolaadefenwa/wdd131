@@ -156,30 +156,30 @@ body {
     display: block;
     width: 40px;
     height: 3px;
-    background: #1a7c4e;
+    background: var(--brunswick-green);
     /* Green line */
     margin-bottom: 1rem;
     border-radius: 2px;
 }
 
 .gallery-text h2 {
-    color: #21724b;
+    color: var(--brunswick-green);
     font-size: 2.3rem;
-    font-weight: 700;
+    font-weight: var(--merriweather-bold-font-style);
     margin: 0 0 1rem 0;
     letter-spacing: 0.5px;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--merriweather-bold-font-family);
 }
 
 .gallery-text p {
-    color: #4a6b57;
+    color: var(--brunswick-green);
     font-size: 1rem;
-    max-width: 600px;
+    max-width: 800px;
     text-align: center;
     margin: 0 auto;
     line-height: 1.6;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--lato-bold-font-family);
 }
 
 main,

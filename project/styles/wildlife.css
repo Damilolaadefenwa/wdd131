@@ -141,13 +141,84 @@ body {
 
 
 /*------ Main Section ----- */
-
-main {
-    padding: 20px;
-    background-color: #f4f4f4;
-    min-height: 60vh; /* Ensures main section takes up space */
+/* The Main tag, div tag and Image stlying start from here*/
+.gallery-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem 2rem 1rem;
+    background: #fff;
 }
 
+.gallery-text::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #1a7c4e;
+    /* Green line */
+    margin-bottom: 1rem;
+    border-radius: 2px;
+}
+
+.gallery-text h2 {
+    color: #21724b;
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    letter-spacing: 0.5px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gallery-text p {
+    color: #4a6b57;
+    font-size: 1rem;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main,
+.gallery {
+    margin-top: 1rem;
+    /* margin: 0rem;
+    padding: 0rem; */
+}
+
+/* Add this for the card container */
+.gallery {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+    padding: 1.5rem 1rem 1rem 1rem;
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+/* Update your image style for the card */
+.gallery img {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: 1.5rem auto 0 auto;
+    border-radius: 6px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    background: #fff;
+}
+
+.gallery .label {
+    color: var(--brunswick-green);
+    font-variant: small-caps;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-right: 0.3em;
+}
 
 /*----- Footer Styling------- */
 .main-footer {
@@ -192,7 +263,7 @@ main {
 
 /* --- Responsive Design --- */
 
-/* Mobile adjustments */
+/* Mobile adjustments responsiveness*/
 @media (max-width: 768px) {
     .header-top-bar {
         flex-direction: column;
@@ -256,9 +327,6 @@ main {
         padding: 8px 15px;
     }
 
-    
-
-
     .main-footer {
         flex-direction: column;
         align-items: center;
@@ -284,6 +352,20 @@ main {
         height: 3em;
         margin: 0 0.3em;
     }
+
+
+    .gallery {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* Creates one column that takes up all available space */
+        gap: 1rem;
+        /* Sets a gap of 1rem between rows */
+        /* padding-top: 5rem;  for ovalay effect of h1*/
+
+    }
+
+
 }
 
 
@@ -291,7 +373,7 @@ main {
 @media (min-width: 1024px) {
 
     /* Adjustments specific element sizing */
-    
+
     #menu {
         display: none;
         /* hide hamburger button */
@@ -304,5 +386,17 @@ main {
         background: none;
     }
 
+    main,
+    .gallery {
+        margin-top: 1rem;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-rows: repeat(3, 1fr); */
+        gap: 1rem;
+        /* padding: 1rem; */
+    }
 
 }

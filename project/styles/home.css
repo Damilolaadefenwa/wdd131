@@ -299,6 +299,22 @@ body {
     text-align: center;
 }
 
+.card-section h2 {
+    background: #fff;
+    font-weight: bold;
+    font-size: 2.3rem;
+    padding: 18px 0;
+    border-radius: 8px;
+    display: block;
+    color: var(--brunswick-green);
+    box-shadow: 0 2px 8px rgba(41, 62, 49, 0.06);
+    margin: 0 auto 36px auto;
+    /* space below before card-container */
+    width: 100%;
+    max-width: 700px;
+    /* makes it wider but not full width */
+}
+
 .card-section img {
     width: 100%;
     max-width: 200px;

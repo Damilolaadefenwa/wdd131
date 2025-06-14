@@ -13,7 +13,6 @@
 
 
     --merriweather-regular-font-family: "Merriweather", sans-serif;
-    --merriweather-regular-font-weight: 400;
     --merriweather-regular-font-style: normal;
     --merriweather-bold-font-family: "Merriweather", sans-serif;
     --merriweather-bold-font-weight: 700;
@@ -259,7 +258,7 @@ body {
     max-width: 500px;
 }
 
-.support-content h2 {
+.support-content h3 {
     font-size: 2.2em;
     color: var(--text-color);
     margin-top: 0;
@@ -295,7 +294,7 @@ body {
 /*---Mein Section Styling ---- */
 
 .card-section {
-    background:rgb(32, 43, 35) ;
+    background: rgb(32, 43, 35);
     padding: 60px 0;
     text-align: center;
 }
@@ -312,7 +311,7 @@ body {
     box-shadow: 0 2px 12px rgba(41, 62, 49, 0.08);
 }
 
-.card-section h3{
+.card-section h3 {
     font-family: var(--merriweather-bold-font-family);
 }
 

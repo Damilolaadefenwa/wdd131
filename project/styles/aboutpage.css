@@ -13,18 +13,12 @@
 
 
     --merriweather-regular-font-family: "Merriweather", sans-serif;
-    --merriweather-regular-font-weight: 400;
     --merriweather-regular-font-style: normal;
-    --merriweather-bold-font-family: "Merriweather", sans-serif;
     --merriweather-bold-font-weight: 700;
-    --merriweather-bold-font-style: border;
 
     --lato-regular-font-family: "Lato", sans-serif;
-    --lato-regular-font-weight: 400;
     --lato-regular-font-style: normal;
-    --lato-bold-font-family: "Lato", sans-serif;
     --lato-bold-font-weight: 600;
-    --lato-bold-font-style: border;
 }
 
 /* --- General Styles --- */
@@ -91,7 +85,6 @@ body {
     margin: 0;
     padding: 0;
     gap: 20px;
-    margin-left: auto;
 }
 
 .main-nav a {
@@ -211,8 +204,6 @@ body {
 }
 
 .primary-btn:hover {
-    background-color: darken(var(--btn-primary-bg), 10%);
-    /* Requires Sass, use fixed color */
     background-color: #c13406;
     /* Example darker orange */
     transform: translateY(-2px);
@@ -225,8 +216,6 @@ body {
 }
 
 .secondary-btn:hover {
-    background-color: darken(var(--btn-secondary-bg), 10%);
-    /* Requires Sass, use fixed color */
     background-color: #c13406;
     /* Example darker orange */
     transform: translateY(-2px);
@@ -280,7 +269,7 @@ main>.values-section {
     object-fit: cover;
     display: block;
     border-radius: 12px;
-   
+
 }
 
 .get-involved-overlay {
@@ -335,7 +324,7 @@ main>.values-section {
     max-width: 500px;
 }
 
-.support-content h2 {
+.support-content h3 {
     font-size: 2.2em;
     color: var(--text-color);
     margin-top: 0;

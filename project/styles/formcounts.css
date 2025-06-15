@@ -12,14 +12,13 @@
 
 
     --merriweather-regular-font-family: "Merriweather", sans-serif;
-    --merriweather-regular-font-weight: 400;
     --merriweather-regular-font-style: normal;
-    --merriweather-bold-font-family: "Merriweather", sans-serif;
+    --merriweather-bold-font-weight: 700;
+
 
     --lato-regular-font-family: "Lato", sans-serif;
-    --lato-regular-font-weight: 400;
     --lato-regular-font-style: normal;
-    --lato-bold-font-family: "Lato", sans-serif;
+    --lato-bold-font-weight: 600;
 }
 
 body {

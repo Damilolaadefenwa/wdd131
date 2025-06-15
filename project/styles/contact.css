@@ -13,14 +13,12 @@
 
 
     --merriweather-regular-font-family: "Merriweather", sans-serif;
-    --merriweather-regular-font-weight: 400;
     --merriweather-regular-font-style: normal;
-    --merriweather-bold-font-family: "Merriweather", sans-serif;
+    --merriweather-bold-font-weight: 700;
 
     --lato-regular-font-family: "Lato", sans-serif;
-    --lato-regular-font-weight: 400;
     --lato-regular-font-style: normal;
-    --lato-bold-font-family: "Lato", sans-serif;
+    --lato-bold-font-weight: 600;
 
 }
 
@@ -97,7 +95,6 @@ body {
     margin: 0;
     padding: 0;
     gap: 20px;
-    margin-left: auto;
 }
 
 .main-nav a {
@@ -161,8 +158,6 @@ body {
 }
 
 .primary-btn:hover {
-    background-color: darken(var(--btn-primary-bg), 10%);
-    /* Requires Sass, use fixed color */
     background-color: #c13406;
     /* Example darker orange */
     transform: translateY(-2px);
@@ -175,8 +170,6 @@ body {
 }
 
 .secondary-btn:hover {
-    background-color: darken(var(--btn-secondary-bg), 10%);
-    /* Requires Sass, use fixed color */
     background-color: #c13406;
     /* Example darker orange */
     transform: translateY(-2px);
@@ -312,12 +305,6 @@ div {
     display: block;
     font-size: 1.2rem;
 }
-
-/* .wf3 div {
-    padding-top: 1rem;
-    color: #445ba9;
-    font-size: .9rem;
-} */
 
 .wf3 label span {
     display: inline;
@@ -458,8 +445,6 @@ div {
     justify-content: flex-end;
     align-items: center;
     background: none;
-    padding: 0;
-    text-align: right;
     padding-right: 2em;
 }
 

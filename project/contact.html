@@ -71,8 +71,8 @@
         <form action="formcounts.html" method="get" class="wf3">
             <fieldset>
                 <legend>Membership Form</legend>
-                <label for="fname">First Name* <input type="text" name="fname" required></label>
-                <label for="lname">Last Name* <input type="text" name="lname" required></label>
+                <label for="fname">First Name* <input type="text" id="fname" name="fname" required></label>
+                <label for="lname">Last Name* <input type="text" id="lname" name="lname" required></label>
                 <label for="address1">Address 1* <input type="text" id="address1" name="address1"></label>
                 <label for="address2">Address 2 <input type="text" id="address2" name="address2"></label>
                 <label for="city">City* <input type="text" id="city" name="city" required></label>
@@ -281,22 +281,24 @@
                     </select>
                 </label>
 
-                <label for="phone">Phone <input type="tel" name="phone" placeholder="1235551234"></label>
-                <label for="email">Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                <label for="phone">Phone <input type="tel" id="phone" name="phone" placeholder="1235551234"></label>
+                <label for="email">Email* <input type="email" id="email" name="email" placeholder="someone@gmail.com"
                         required></label>
-                <label for="birthday">Date of Birth<input type="date" name="birthday" required></label>
+                <label for="birthday">Date of Birth<input type="date" id="birthday" name="birthday" required></label>
 
-                <label for="Interest" class="review">Environmental Interests <span>(Optional)</span></label>
-                <textarea id="environment" name="Interest" rows="5" cols="52"
+                <label for="interest" class="review">Environmental Interests <span>(Optional)</span></label>
+                <textarea id="interest" name="interest" rows="5" cols="52"
                     placeholder="Write your interest here e.g.birdwatching, hiking, marine life,conservation,etc.">
                 </textarea>
 
                 <div>Membership Types</div>
                 <div class="member-type">
-                    <label for="membership"><input type="radio" name="membership" value="individual"
+                    <label for="membership1"><input type="radio" id="membership1" name="membership" value="individual"
                             required>Individual</label>
-                    <label for="membership"><input type="radio" name="membership" value="Family">Family</label>
-                    <label for="membership"><input type="radio" name="membership" value="lifetime">Lifetime</label>
+                    <label for="membership2"><input type="radio" id="membership2" name="membership"
+                            value="Family">Family</label>
+                    <label for="membership3"><input type="radio" id="membership3" name="membership"
+                            value="lifetime">Lifetime</label>
                 </div>
 
                 <div class="wf3-submit">

@@ -154,16 +154,25 @@ displayGalleryImages();
 // 3. CONTACT FORM PAGE SCRIPT.
 // create localStorage to keep track of the number of times the user client visited to the contact page
 //  by adding a counter to the form submission at formcount.html page.
-let visitCount = Number(localStorage.getItem('visitCount')) || 0;
+// let visitCount = Number(localStorage.getItem('visitCount')) || 0;
+// // Increment the count
+// visitCount++;
+// // Store the new count back in localStorage
+// localStorage.setItem('visitCount', visitCount);
+// // Optionally, display the count on the page
+// const visitCountDisplay = document.getElementById('visit-count');
+// if (visitCountDisplay) {
+//     visitCountDisplay.textContent = `You have submitted ${visitCount} review(s).`;
+// }
 
-// Increment the count
-visitCount++;
-
-// Store the new count back in localStorage
-localStorage.setItem('visitCount', visitCount);
-
-// Optionally, display the count on the page
-const visitCountDisplay = document.getElementById('visit-count');
-if (visitCountDisplay) {
-    visitCountDisplay.textContent = `You have submitted ${visitCount} review(s).`;
+function updateVisitCount(elementId = 'visit-count') {
+    let visitCount = localStorage.getItem('visitCount') || 0;
+    visitCount++;
+    localStorage.setItem('visitCount', visitCount);
+    if (document.getElementById(elementId)) {
+        document.getElementById(elementId).textContent = visitCount;
+    }
 }
+
+// Executing the function:
+updateVisitCount(); // and I can also use updateVisitCount('visit-count')

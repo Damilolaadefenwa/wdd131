@@ -98,8 +98,7 @@ body {
 
 .main-nav a:hover {
     color: var(--Crayola-orange);
-    /* text-decoration: underline double;
-    background-color: #7e57c2;     */
+    /* text-decoration: underline double;*/
 }
 
 .active {
@@ -177,8 +176,6 @@ body {
 main,
 .gallery {
     margin-top: 1rem;
-    /* margin: 0rem;
-    padding: 0rem; */
 }
 
 /* Add this for the card container */
@@ -343,7 +340,6 @@ main,
         margin: 0 0.3em;
     }
 
-
     .gallery {
         margin-top: 2rem;
         display: grid;
@@ -354,7 +350,6 @@ main,
         /* padding-top: 5rem;  for ovalay effect of h1*/
 
     }
-
 
 }
 

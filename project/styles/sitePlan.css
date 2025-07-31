@@ -197,6 +197,10 @@ img {
         height: auto;
         font-size: 1rem;
         padding: 0.5rem;
+        word-break: break-all;
+        display: block;
+        box-sizing: border-box;
+        max-width: 100%;
     }
 }
 
